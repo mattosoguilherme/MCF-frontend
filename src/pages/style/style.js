@@ -81,16 +81,13 @@ export const MenuS = styled.div`
 
   @media (max-width: 420px) {
     width: 50%;
-    height:25rem;
+    height:40rem;
     flex-direction: column;
     padding: 0;
     align-items: center;
-    background-color:blue;
     margin:0;
     padding:0;
   }
-
-
 
   button {
     margin:0; 
@@ -99,6 +96,7 @@ export const MenuS = styled.div`
     border-radius: 20px;
     background-color: black;
     color: white;
+    box-shadow: 1px 1px 20px 1px;
   }
 
 
