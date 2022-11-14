@@ -30,15 +30,14 @@ const ContainerS = styled.main`
 export const ContainerHome = styled.main`
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
-  height: 100vh;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
+  width: 100%;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: center;
-  
 
   @media (max-width: 420px) {
     background-color: black;
@@ -71,6 +70,38 @@ export const FormLogin = styled.form`
     height: 3rem;
     align-self: center;
   }
+`;
+
+export const MenuS = styled.div`
+  padding: 5rem;
+  width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-self:center;
+
+  @media (max-width: 420px) {
+    width: 50%;
+    height:25rem;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    background-color:blue;
+    margin:0;
+    padding:0;
+  }
+
+
+
+  button {
+    margin:0; 
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+  }
+
+
 `;
 
 export default ContainerS;
