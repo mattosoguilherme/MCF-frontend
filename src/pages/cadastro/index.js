@@ -17,7 +17,9 @@ const Cadastro = () => {
           </select>
 
           <div>
-            <button> Voltar</button>
+            <button>
+              <Link to={"/home"}> voltar</Link>
+            </button>
             <button> Salvar</button>
           </div>
         </FormCadS>
