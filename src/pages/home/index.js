@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ContainerHome, MenuS } from "../style/style";
 
 const Home = () => {
@@ -6,7 +7,7 @@ const Home = () => {
       <ContainerHome>
         <MenuS>
     
-            <button> PEDIDOS </button>
+            <button> <Link to={"/cadastro"}> PEDIDOS </Link> </button>
    
 
      

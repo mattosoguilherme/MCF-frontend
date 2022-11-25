@@ -102,4 +102,23 @@ export const MenuS = styled.div`
 
 `;
 
+export const FormCadS = styled.form`
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 30rem;
+align-self: center;
+background-color: black;
+padding: 2rem 0.7rem 2rem 0.7rem;
+border-radius: 2rem;
+@media (max-width: 420px) {
+  width: 100%;
+}
+
+input {
+  background-color: transparent !important;
+}
+
+`
+
 export default ContainerS;
