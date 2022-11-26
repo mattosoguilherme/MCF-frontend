@@ -18,7 +18,11 @@ const Home = () => {
             <ButtonMenuS> PEDIDOS </ButtonMenuS>
           </Link>
 
-          <ButtonMenuS> RELATÓRIO </ButtonMenuS>
+          <Link to={"/report"}>
+        
+        <ButtonMenuS> RELATÓRIO </ButtonMenuS>
+      </Link>
+
         </MenuS>
       </ContainerHome>
     </>
