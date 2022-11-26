@@ -1,5 +1,5 @@
 import Header from "../../components/navbar";
-import { ContainerHome } from "../style/style";
+import { ContainerHome, TableS } from "../style/style";
 
 const List = () => {
   return (
@@ -12,7 +12,8 @@ const List = () => {
 
 
         <div className="table-responsive">
-          <table className=" overflow-auto table table-hover">
+
+          <TableS className=" overflow-auto table table-hover">
             <thead>
               <tr>
                 <th scope="col">Nome</th>
@@ -30,7 +31,7 @@ const List = () => {
                 <td>reservado</td>
               </tr>
             </tbody>
-          </table>
+          </TableS>
 
         </div>
 

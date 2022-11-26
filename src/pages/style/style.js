@@ -65,6 +65,16 @@ export const ContainerHome = styled.main`
   @media (max-width: 420px) {
     background-color: black;
   }
+
+  .table-responsive {
+    margin-top: 5rem;
+  }
+`;
+
+export const TableS = styled.table`
+  @media (max-width: 420px) {
+    color: white;
+  }
 `;
 
 export const FormLogin = styled.form`
@@ -85,17 +95,16 @@ export const FormLogin = styled.form`
   }
 
   button {
-    margin-top:1.5rem ;
+    margin-top: 1.5rem;
     width: 10rem;
     height: 3rem;
-    border-radius:7px;
-    
+    border-radius: 7px;
   }
-  a{
-    align-self:center;
-    text-decoration:none;
-    color:black;
- }
+  a {
+    align-self: center;
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export const MenuS = styled.div`
