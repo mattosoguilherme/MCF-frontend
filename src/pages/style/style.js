@@ -77,20 +77,20 @@ export const MenuS = styled.div`
   width: 50rem;
   display: flex;
   justify-content: space-evenly;
-  align-self:center;
+  align-self: center;
 
   @media (max-width: 420px) {
     width: 50%;
-    height:40rem;
+    height: 40rem;
     flex-direction: column;
     padding: 0;
     align-items: center;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   button {
-    margin:0; 
+    margin: 0;
     width: 8rem;
     height: 8rem;
     border-radius: 20px;
@@ -98,27 +98,61 @@ export const MenuS = styled.div`
     color: white;
     box-shadow: 1px 1px 20px 1px;
   }
-
-
 `;
 
 export const FormCadS = styled.form`
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 30rem;
-align-self: center;
-background-color: black;
-padding: 2rem 0.7rem 2rem 0.7rem;
-border-radius: 2rem;
-@media (max-width: 420px) {
-  width: 100%;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30rem;
+  align-self: center;
+  background-color: black;
+  padding: 2rem 0.7rem 2rem 0.7rem;
+  border-radius: 2rem;
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 
-input {
-  background-color: transparent !important;
-}
+  input {
+    background-color: transparent !important;
+    margin: 0 0 1rem 0;
+    color: white;
+    border-color: white;
+    height: 3rem;
+    border-radius: 5px;
+  }
 
-`
+  input::placeholder {
+    color: white;
+  }
+
+  label {
+    color: white;
+    font-size:1.2rem
+  }
+
+  select {
+    background-color: transparent !important;
+    margin: 0 0 1rem 0;
+    color: white;
+    border-color: white;
+    height: 3rem;
+    border-radius: 5px;
+  }
+
+  div{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+  }
+
+   button{
+    width: 8rem;
+    height:3rem;
+   border-radius:5px;
+  }
+
+
+`;
 
 export default ContainerS;

@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Login from "./pages/login";
 import Cadastro from "./pages/cadastro";
+import List from "./pages/list";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <Routes>
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/" element={<Login />} />
-        <Route path="/inicial" element={<Home />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </>
   );

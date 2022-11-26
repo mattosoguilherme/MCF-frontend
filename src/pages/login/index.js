@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import ContainerS, { FormLogin, H1s } from "../style/style";
 
-
 const Login = () => {
   return (
     <>
@@ -29,7 +28,9 @@ const Login = () => {
             <label for="floatingPassword">senha</label>
           </div>
 
-          <button> <Link to={"/inicial"} > Entrar</Link>   </button>
+          <button>
+            <Link to={"/home"}> Entrar</Link>
+          </button>
         </FormLogin>
       </ContainerS>
     </>

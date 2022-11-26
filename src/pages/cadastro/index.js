@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContainerS, { FormCadS } from "../style/style";
 
 const Cadastro = () => {
@@ -17,9 +18,10 @@ const Cadastro = () => {
           </select>
 
           <div>
-            <button>
-              <Link to={"/home"}> voltar</Link>
-            </button>
+            <Link to={"/home"}>
+              <button>Voltar </button>
+            </Link>
+
             <button> Salvar</button>
           </div>
         </FormCadS>

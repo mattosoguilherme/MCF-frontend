@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
+import Header from "../../components/navbar";
 import { ContainerHome, MenuS } from "../style/style";
 
 const Home = () => {
   return (
     <>
       <ContainerHome>
+        <Header />
         <MenuS>
-    
-            <button> <Link to={"/cadastro"}> PEDIDOS </Link> </button>
-   
-
-     
+          <Link to={"/cadastro"}>
+           
             <button> ADICIONAR PEDIDO </button>
-      
+          </Link>
 
-    
-            <button> RELATÓRIO </button>
-          
+          <Link to={"/list"}>
+        
+            <button> PEDIDOS </button>
+          </Link>
+
+          <button> RELATÓRIO </button>
         </MenuS>
       </ContainerHome>
     </>
