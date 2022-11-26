@@ -83,7 +83,7 @@ export const FormLogin = styled.form`
   input {
     background-color: transparent !important;
   }
-  
+
   button {
     margin-top:1.5rem ;
     width: 10rem;
@@ -93,6 +93,8 @@ export const FormLogin = styled.form`
   }
   a{
     align-self:center;
+    text-decoration:none;
+    color:black;
  }
 `;
 
