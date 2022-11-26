@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../../components/navbar";
-import { ContainerHome, MenuS } from "../style/style";
+import { ButtonMenuS, ContainerHome, MenuS } from "../style/style";
 
 const Home = () => {
   return (
@@ -10,15 +10,15 @@ const Home = () => {
         <MenuS>
           <Link to={"/cadastro"}>
            
-            <button> ADICIONAR PEDIDO </button>
+            <ButtonMenuS> ADICIONAR PEDIDO </ButtonMenuS>
           </Link>
 
           <Link to={"/list"}>
         
-            <button> PEDIDOS </button>
+            <ButtonMenuS> PEDIDOS </ButtonMenuS>
           </Link>
 
-          <button> RELATÓRIO </button>
+          <ButtonMenuS> RELATÓRIO </ButtonMenuS>
         </MenuS>
       </ContainerHome>
     </>

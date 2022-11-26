@@ -28,9 +28,9 @@ const Login = () => {
             <label for="floatingPassword">senha</label>
           </div>
 
-          <button>
-            <Link to={"/home"}> Entrar</Link>
-          </button>
+          <Link to={"/home"}>
+            <button> Entrar</button>
+          </Link>
         </FormLogin>
       </ContainerS>
     </>

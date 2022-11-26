@@ -5,7 +5,9 @@ export const H1s = styled.h1`
   text-align: center;
   @media (max-width: 420px) {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+    box-shadow: none !important;
+    font-weight: none !important;
   }
 `;
 
@@ -24,6 +26,27 @@ const ContainerS = styled.main`
 
   @media (max-width: 420px) {
     background-color: black;
+  }
+
+  h1 {
+    align-self: center;
+    font-size: 4rem;
+    box-shadow: 1px 1px 20px 1px white;
+    border-radius: 10px;
+    position: relative;
+    padding: 0.5rem;
+  }
+
+  @media (max-width: 420px) {
+    color: white;
+  }
+`;
+
+export const NavS = styled.nav`
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
   }
 `;
 
@@ -60,16 +83,17 @@ export const FormLogin = styled.form`
   input {
     background-color: transparent !important;
   }
-
-  label{
-    color:white; !important
-  }
+  
   button {
     margin-top:1.5rem ;
     width: 10rem;
     height: 3rem;
-    align-self: center;
+    border-radius:7px;
+    
   }
+  a{
+    align-self:center;
+ }
 `;
 
 export const MenuS = styled.div`
@@ -88,15 +112,19 @@ export const MenuS = styled.div`
     margin: 0;
     padding: 0;
   }
+`;
 
-  button {
-    margin: 0;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    box-shadow: 1px 1px 20px 1px;
+export const ButtonMenuS = styled.button`
+  margin: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 20px 1px black;
+
+  @media (max-width: 420px) {
+    box-shadow: 1px 1px 20px 1px white;
   }
 `;
 
@@ -120,6 +148,10 @@ export const FormCadS = styled.form`
     border-color: white;
     height: 3rem;
     border-radius: 5px;
+    padding: 0 0 0 0.5rem;
+  }
+  option {
+    color: black;
   }
 
   input::placeholder {
@@ -128,7 +160,7 @@ export const FormCadS = styled.form`
 
   label {
     color: white;
-    font-size:1.2rem
+    font-size: 1.2rem;
   }
 
   select {
@@ -138,21 +170,20 @@ export const FormCadS = styled.form`
     border-color: white;
     height: 3rem;
     border-radius: 5px;
+    padding: 0 0 0 0.5rem;
   }
 
-  div{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
-   button{
+  button {
     width: 8rem;
-    height:3rem;
-   border-radius:5px;
+    height: 2.5rem;
+    border-radius: 5px;
   }
-
-
 `;
 
 export default ContainerS;

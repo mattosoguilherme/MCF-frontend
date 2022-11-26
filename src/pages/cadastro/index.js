@@ -11,8 +11,9 @@ const Cadastro = () => {
 
           <input type="number" placeholder="Quantidade de marmitas" />
 
-          <label> Tipo de pedido</label>
+          
           <select>
+          <option>Tipo de pedido </option>
             <option>Entrega </option>
             <option> Retirada </option>
           </select>
