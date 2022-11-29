@@ -1,4 +1,9 @@
 *{
-    justify-content:initial ;
+    justify-content:space-between ;
+    border:5px solid black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
     
 }

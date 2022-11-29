@@ -1,5 +1,131 @@
 import styled from "styled-components";
 
+export const ContainerReport = styled.main`
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  width: 100%;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (max-width: 420px) {
+    background-color: black;
+    color: white;
+  }
+`;
+
+export const DivTotalPedidos = styled.div`
+  border: 3px solid white;
+  padding: 5px 1rem 5px 1rem;
+  border-radius: 10px;
+  text-align: center;
+
+  span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+`;
+
+export const SectionDados = styled.div`
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+
+  @media (max-width: 420px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #aguardando {
+      color: #0076c8;
+    }
+    #aguardando span {
+      border-color: #0076c8;
+      color: white;
+      background-color: #0076c8;
+    }
+
+    #finalizado {
+      color: #693dbf;
+    }
+    #finalizado span {
+      border-color: #693dbf;
+      color: white;
+      background-color: #693dbf;
+    }
+
+    #pagos {
+      color: #29c45b;
+    }
+    #pagos span {
+      border-color: #29c45b;
+      color: white;
+      background-color: #29c45b;
+    }
+  }
+
+  div {
+    width: 10rem;
+    margin: 0.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    border: 3px solid white;
+    padding: 0;
+    width: 5rem;
+    border-radius: 100rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
+`;
+
+export const SectionPagos = styled.section`
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+  @media (max-width: 420px) {
+    #receber {
+      color: #f2b705;
+      color: white;
+      background-color: #f2b705;
+    }
+
+    #recebido {
+      color: #29c45b;
+      background-color: #29c45b;
+      color: white;
+    }
+  }
+
+  div {
+    border: 3px solid black;
+    padding: 5px 1rem 5px 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+`;
+
 export const H1s = styled.h1`
   font-family: "Reenie Beanie", cursive;
   text-align: center;
@@ -102,7 +228,6 @@ export const FormLogin = styled.form`
     align-self: center;
     color: black;
   }
-
 `;
 
 export const MenuS = styled.div`
