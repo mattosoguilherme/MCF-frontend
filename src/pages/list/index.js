@@ -53,7 +53,6 @@ const List = () => {
         <>
           <ContainerHome>
             <Header />
-
             <div className="table-responsive">
               <TableS className=" overflow-auto table table-hover">
                 <thead>

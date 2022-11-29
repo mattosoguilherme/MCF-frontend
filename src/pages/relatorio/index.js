@@ -15,6 +15,7 @@ const Report = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [logged, setLogged] = useState(false);
+  const [pedido, setPedido] = useState([])
   useEffect(() => {
     const config = {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -33,8 +34,25 @@ const Report = () => {
         });
     }
 
+    async function GetPedidos() {
+      await axios
+        .get("/marmita", config)
+        .then((r) => {
+          console.log(r.data);
+          setPedido(r.data)
+        })
+        .catch((e) => {
+          alert(e.response.data.message);
+        });
+    }
+
     GetUser();
+    GetPedidos()
   }, []);
+
+  const nAguard = pedido.filter( p => p.status == "AGUARDANDO").length
+  const nFin= pedido.filter( p => p.status == "FINALIZADO" ).length
+  const nPag = pedido.filter( p => p.status == "PAGO").length
 
   return (
     <>
@@ -52,27 +70,27 @@ const Report = () => {
 
       {logged && (
         <>
-        <Header/>
+          <Header />
           <ContainerReport>
             <DivTotalPedidos>
               <h2>Total de Pedidos</h2>
-              <span> 100 </span>
+              <span> {pedido.length} </span>
             </DivTotalPedidos>
 
             <SectionDados>
               <div id="aguardando">
                 <h3> Aguardando </h3>
-                <span> 20</span>
+                <span> {nAguard}</span>
               </div>
 
               <div id="finalizado">
                 <h3> Finalizado </h3>
-                <span> 40</span>
+                <span> {nFin} </span>
               </div>
 
               <div id="pagos">
                 <h3> Pagos </h3>
-                <span> 40</span>
+                <span> {nPag} </span>
               </div>
             </SectionDados>
 
