@@ -99,12 +99,10 @@ export const FormLogin = styled.form`
     width: 10rem;
     height: 3rem;
     border-radius: 7px;
-  }
-  a {
     align-self: center;
-    text-decoration: none;
     color: black;
   }
+
 `;
 
 export const MenuS = styled.div`
