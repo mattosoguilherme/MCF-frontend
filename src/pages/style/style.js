@@ -235,6 +235,7 @@ export const FormLogin = styled.form`
 
   input {
     background-color: transparent !important;
+    color: white;
   }
 
   input::placeholder {
