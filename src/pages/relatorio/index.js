@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 import Header from "../../components/navbar";
 import {
   ContainerHome,
@@ -50,9 +50,9 @@ const Report = () => {
         .get("/marmita", config)
         .then((r) => {
           const todos = r.data;
-          const listAguard = todos.filter((p) => p.status == "AGUARDANDO");
-          const listFin = todos.filter((p) => p.status == "FINALIZADO");
-          const listPag = todos.filter((p) => p.status == "PAGO");
+          const listAguard = todos.filter((p) => p.status === "AGUARDANDO");
+          const listFin = todos.filter((p) => p.status === "FINALIZADO");
+          const listPag = todos.filter((p) => p.status === "PAGO");
 
           setPedido(QtdPedido(todos));
           setFin(QtdPedido(listFin));

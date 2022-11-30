@@ -6,7 +6,7 @@ import axios from "axios";
 const Cadastro = () => {
   const [logged, setLogged] = useState(false);
   const [loading, setLoading] = useState(false);
-  const token = localStorage.getItem("token");
+  
   const navigate = useNavigate();
   useEffect(() => {
     const config = {

@@ -35,7 +35,14 @@ const List = () => {
     GetUser();
     GetPedidos();
   }, []);
-
+  pedidos.sort((a, b) => {
+    if (a.status > b.status) {
+      return 1;
+    }
+    if (a.status < b.status) {
+      return -1;
+    }
+  });
   return (
     <>
       {!loading && (
@@ -66,7 +73,7 @@ const List = () => {
 
                 <tbody>
                   {pedidos.map((p) => (
-                    <tr>
+                    <tr id={p.status}>
                       <th scope="row">
                         <Link to={`/edit/${p.id}`}> {p.nome} </Link>
                       </th>

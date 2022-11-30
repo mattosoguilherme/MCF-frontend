@@ -201,6 +201,23 @@ export const TableS = styled.table`
   @media (max-width: 420px) {
     color: white;
   }
+
+  #AGUARDANDO {
+    background-color: #0076c8;
+  }
+
+  #FINALIZADO {
+    background-color: #693dbf;
+  }
+
+  #PAGO {
+    background-color: #29c45b;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 export const FormLogin = styled.form`

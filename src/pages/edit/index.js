@@ -7,7 +7,7 @@ const Edit = () => {
   const [logged, setLogged] = useState(false);
   const [loading, setLoading] = useState(false);
   const [pedido, setPedido] = useState({});
-  const token = localStorage.getItem("token");
+  
   const { id } = useParams();
   const navigate = useNavigate();
   useEffect(() => {
