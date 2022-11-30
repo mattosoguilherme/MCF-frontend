@@ -237,6 +237,10 @@ export const FormLogin = styled.form`
     background-color: transparent !important;
   }
 
+  input::placeholder {
+    color: white;
+  }
+
   button {
     margin-top: 1.5rem;
     width: 10rem;
