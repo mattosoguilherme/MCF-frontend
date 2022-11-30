@@ -2,7 +2,7 @@ import Header from "../../components/navbar";
 import { ContainerHome, TableS } from "../style/style";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const List = () => {
   const [logged, setLogged] = useState(false);
@@ -67,7 +67,9 @@ const List = () => {
                 <tbody>
                   {pedidos.map((p) => (
                     <tr>
-                      <th scope="row"> {p.nome} </th>
+                      <th scope="row">
+                        <Link to={`/edit/${p.id}`}> {p.nome} </Link>
+                      </th>
                       <td>{p.tipo_encomenda}</td>
                       <td>{p.quantidade}</td>
                       <td>{p.status}</td>

@@ -4,6 +4,7 @@ import Login from "./pages/login";
 import Cadastro from "./pages/cadastro";
 import List from "./pages/list";
 import Report from "./pages/relatorio";
+import Edit from "./pages/edit";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/" element={<Login />} />
+        <Route path="/edit/:id" element={<Edit />} />
         <Route path="/report" element={<Report />} />
         <Route path="/list" element={<List />} />
         <Route path="/home" element={<Home />} />
