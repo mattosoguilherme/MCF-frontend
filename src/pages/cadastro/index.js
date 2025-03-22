@@ -45,6 +45,7 @@ const Cadastro = () => {
       .post("/marmita", inputPedido, config)
       .then((r) => {
         alert("Salvo com sucesso");
+        navigate("/list")
       })
       .catch((e) => {
         alert(e.response.data.message);

@@ -27,7 +27,7 @@ const Report = () => {
   const [aguard, setAguard] = useState(0);
   const [fin, setFin] = useState(0);
   const [pag, setPag] = useState(0);
-  const [nrecebe, setNrecebe]= useState(0)
+  const areceber =  fin + aguard
   useEffect(() => {
     const config = {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -59,7 +59,7 @@ const Report = () => {
           setFin(QtdPedido(listFin));
           setPag(QtdPedido(listPag));
           setAguard(QtdPedido(listAguard));
-          setNrecebe(listFin+listAguard)
+          
           
           
         })
@@ -72,12 +72,16 @@ const Report = () => {
     GetPedidos();
   }, []);
 
+
+  
+
   return (
     <>
       {!loading && (
         <>
           <ContainerHome>
             <img
+              alt="..."
               width="200px"
               height="200px"
               src="https://media.tenor.com/6gHLhmwO87sAAAAj/gg.gif"
@@ -115,7 +119,7 @@ const Report = () => {
             <SectionPagos>
               <div id="receber">
                 <h4> A Receber</h4>
-                <span> R$ {nrecebe*35}</span>
+                <span> R$ {areceber*35}</span>
               </div>
 
               <div id="recebido">

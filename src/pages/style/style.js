@@ -37,6 +37,33 @@ export const SectionDados = styled.div`
   display: flex;
   flex-direction: row !important;
   width: 100%;
+  justify-content: space-evenly;
+  #aguardando {
+    color: #0076c8;
+  }
+  #aguardando span {
+    border-color: #0076c8;
+    color: white;
+    background-color: #0076c8;
+  }
+
+  #finalizado {
+    color: #693dbf;
+  }
+  #finalizado span {
+    border-color: #693dbf;
+    color: white;
+    background-color: #693dbf;
+  }
+
+  #pagos {
+    color: #29c45b;
+  }
+  #pagos span {
+    border-color: #29c45b;
+    color: white;
+    background-color: #29c45b;
+  }
 
   @media (max-width: 420px) {
     flex-wrap: wrap;
